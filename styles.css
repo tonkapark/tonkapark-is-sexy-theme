@@ -74,6 +74,8 @@ hr {margin-bottom: 10px;height: 1px;color: #ccc;background: #ccc;border: none;}
 	}
 	
 #main-content {margin-top: 10px;}	
+#main-content a{text-decoration: underline;}
+#main-content a:hover{color:red; text-decoration: underline;}
 
 /*============================================================
  Navigation
@@ -187,18 +189,43 @@ hr {margin-bottom: 10px;height: 1px;color: #ccc;background: #ccc;border: none;}
 	}	
 
 #search-submit {
-	width: 24px;
-	height: 18px;
-	margin-left: 3px;
-	vertical-align: middle;
-	border: none;
-	background: url(/themes/sexy/images/btn-go.gif) no-repeat;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));
+	border: 1px solid #ddd;
+	border-bottom-left-radius: 3px 3px;
+	border-bottom-left-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-top-left-radius: 3px 3px;
+	border-top-left-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
 	cursor: pointer;
-	}
+	display: inline-block;
+	margin: 0px 2px;
+	outline: none;
+	padding: 6px 10px;
+	text-align: center;
+	text-decoration: none !important;
+	vertical-align: baseline;
+	zoom: 1;
+}
 
-#search-submit span {
-	display: none;
-	}
+#search-submit a:hover {
+	text-decoration: none;
+	background: #f1efde;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#eee));
+	background: -moz-linear-gradient(top,  #ddd,  #eee);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddd', endColorstr='#eee');
+}
+#search-submit a:active {
+	position: relative;
+	top: 1px;
+	background: #f1efde;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+	background: -moz-linear-gradient(top,  #fff,  #eee);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#eee');
+}
+
 	
 /* Big Cartel Badge ----------------------------------------*/
 
@@ -236,6 +263,11 @@ div#error li {margin: 0;padding: 0 20px;font-weight: bold;  background: url(/the
 #products {float: left;}
 #products div.product {float:left; margin:0 10px 20px 0; width: 220px;}
 
+#product-1, #product-4, #product-7, #product-10, #product-13, #product-16, #product-19, #product-22, #product-25, #product-28,
+#product-31, #product-34, #product-37, #product-40, #product-43, #product-46, #product-49, #product-52, #product-55, #product-58,
+#product-61, #product-64, #product-67, #product-70, #product-73, #product-76, #product-79, #product-82, #product-85, #product-88,
+#product-91, #product-94, #product-97, #product-100 {clear:both}
+	
 #products #product-3, #products #product-6, #products #product-9, #products #product-12, #products #product-15, #products #product-18, #products #product-21, #products #product-24, #products #product-27, #products #product-30,
 #products #product-33, #products #product-36, #products #product-39, #products #product-42, #products #product-45, #products #product-48, #products #product-51, #products #product-54, #products #product-57, #products #product-60,
 #products #product-63, #products #product-66, #products #product-69, #products #product-72, #products #product-75, #products #product-78, #products #product-81, #products #product-84, #products #product-87, #products #product-90,
@@ -650,17 +682,17 @@ zoom: 1;}
 
 /* Cart Table Columns --------------------------------------*/
 
-#col-item		{ width: 337px; }
-#col-price		{ width: 65px; }
-#col-qty		{ width: 40px; }
-#col-total		{ width: 65px; }
-#col-options	{ width: 30px; }
+#col-item		{ width: 430px; }
+#col-price		{ width: 85px; }
+#col-qty		{ width: 55px; }
+#col-total		{ width: 90px; }
+#col-options	{ width: 40px; }
 
 
 /* Cart Table Header ---------------------------------------*/
 
 #cart-head {
-	font-size: 9px;
+	font-size: 14px;
 	color: #fff;
 	background: #404040;
 	}
@@ -682,7 +714,7 @@ zoom: 1;}
 /* Cart Table Body -----------------------------------------*/
 
 #cart-body {
-	font-size: 9px;
+	font-size: 14px;
 	}
 
 #cart-body th {
@@ -764,14 +796,14 @@ zoom: 1;}
 	zoom: 1;
 }
 
-#minicart .minicart-view:hover {
+#cart-footer .update-btn:hover {
 	text-decoration: none;
 	background: #f1efde;
 	background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#eee));
 	background: -moz-linear-gradient(top,  #ddd,  #eee);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddd', endColorstr='#eee');
 }
-#minicart .minicart-view:active {
+#cart-footer .update-btn:active {
 	position: relative;
 	top: 1px;
 	background: #f1efde;
@@ -842,25 +874,47 @@ zoom: 1;}
 	} 
 
 #cart-footer .checkout-btn {
-	width: 66px;
-	height: 18px;
-	margin-left: 8px;
-	background: url(/themes/sexy/images/btn-checkout.gif) no-repeat;
-	border: none;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));
+	border: 1px solid #ddd;
+	border-bottom-left-radius: 3px 3px;
+	border-bottom-left-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-top-left-radius: 3px 3px;
+	border-top-left-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
 	cursor: pointer;
-	}
+	display: inline-block;
+	margin: 0px 2px;
+	outline: none;
+	padding: 6px 10px;
+	text-align: center;
+	text-decoration: none !important;
+	vertical-align: baseline;
+	zoom: 1;
+}
 
-#cart-footer .update-btn span,
-#cart-footer .checkout-btn span {
-	display: none;
-	}
+#cart-footer .checkout-btn:hover {
+	text-decoration: none;
+	background: #f1efde;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#eee));
+	background: -moz-linear-gradient(top,  #ddd,  #eee);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddd', endColorstr='#eee');
+}
+#cart-footer .checkout-btn:active {
+	position: relative;
+	top: 1px;
+	background: #f1efde;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+	background: -moz-linear-gradient(top,  #fff,  #eee);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#eee');
+}
 
 span.total-discount,
 span.total-shipping {
 	font-weight: bold;
 	}
-
-
 
 /*============================================================
  FAQ
@@ -892,15 +946,15 @@ span.total-shipping {
 	}
 
 #contact-form {
-	width: 425px;
+	width: 460px;
 	padding: 15px 0;
 	}
 	
 #contact-form label {
 	float: left;
-	width: 85px;
+	width: 120px;
 	padding: 2px 0;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: bold;
 	text-align: right;
 	color: #666;
@@ -913,6 +967,7 @@ span.total-shipping {
 	margin: 0 25px 8px 10px;
 	vertical-align: bottom;
 	}
+#contact-form input {padding: 3px;}
 
 #contact-form textarea {
 	width: 300px;
@@ -924,32 +979,35 @@ span.total-shipping {
 	float: left;
 	display: inline;
 	width: 330px;
-	margin: 0 -3px 10px 95px; /* -3px fixes ie6 duplicate chars */
+	margin: 0 -3px 10px 125px; /* -3px fixes ie6 duplicate chars */
 	}
 
 #contact-form p {
 	margin-bottom: 25px;
 	}
 
-#contact-submit {clear:both;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));
-border: 1px solid #ddd;
-border-bottom-left-radius: 3px 3px;
-border-bottom-left-radius: 3px 3px;
-border-bottom-right-radius: 3px 3px;
-border-bottom-right-radius: 3px 3px;
-border-top-left-radius: 3px 3px;
-border-top-left-radius: 3px 3px;
-border-top-right-radius: 3px 3px;
-border-top-right-radius: 3px 3px;
-cursor: pointer;
-display: inline-block;
-margin: 0px 2px;
-outline: none;
-padding: 6px 10px;
-text-align: center;
-text-decoration: none !important;
-vertical-align: baseline;
-zoom: 1;}
+#contact-submit {	
+	float:right;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));
+	border: 1px solid #ddd;
+	border-bottom-left-radius: 3px 3px;
+	border-bottom-left-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-top-left-radius: 3px 3px;
+	border-top-left-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0px 2px;
+	outline: none;
+	padding: 6px 10px;
+	text-align: center;
+	text-decoration: none !important;
+	vertical-align: baseline;
+	zoom: 1;
+}
 
 #contact-submit:hover {
 	text-decoration: none;
