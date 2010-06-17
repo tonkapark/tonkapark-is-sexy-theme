@@ -1,10 +1,11 @@
 /*============================================================
-  Theme:   Tonka Park is Sexy
-  Author:  Tonka Park
-           http://tonkapark.com
-           
-           Copyright 2010 Matt Anderson dba Tonka Park
-           More info at: http://tonkapark.com
+  Theme:         Tonka Park is Sexy
+  Description: A Big Cartel CSS Modification for the Sexy Theme.
+  Author:       Matt Anderson
+                    http://tonkapark.com
+  
+  Copyright 2010 Matt Anderson, Tonka Park
+  More info at: http://tonkapark.com
 ============================================================*/
 
 * {margin: 0;padding: 0;}
@@ -297,7 +298,8 @@ html #products .product-info {	width: 175px; 	w\idth: 175px;}
 #products .product-price {font-size: 14px;font-weight: bold;}
 #products .product-status {font-size: 10px;font-style: italic;}
 
-#products .product-a {	}
+#products .product a {text-decoration:none; color: #333;}
+#products .product a:hover {text-decoration:none; color: #ddd}
 
 #products .product-a h3,
 #products .product-a p {
